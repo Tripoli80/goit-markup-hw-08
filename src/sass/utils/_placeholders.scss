@@ -1,0 +1,27 @@
+ %trans{ 
+  transition-duration: var(--time);
+  transition-timing-function: var(--functional-cubic);
+ }
+
+ %sosial-box {
+  @include centerFlex();
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition-property: background-color;
+  @extend %trans;
+  &:hover,
+  &:focus {
+    background-color: var(--theme-color);
+  }
+}
+%sosial-icon {
+  height: 20px;
+  width: 20px;
+  
+  @extend %trans;
+  .soclink__box:hover &,
+  .soclink__box:focus & {
+    fill: var(--bcg-main);
+  }
+}

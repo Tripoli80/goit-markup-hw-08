@@ -1,0 +1,37 @@
+/*  ПОЧЕМУ МЫ */
+.why-we {
+  display: flex;
+  margin-left: -30px;
+}
+.why-we__item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  flex-wrap: wrap;
+  /* width: 100px; */
+}
+.why-we__box {
+  background-color: #f5f4fa;
+  display: flex;
+  border-radius: 4px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+}
+.why-we__icon {
+  width: 70px;
+  height: 70px;
+}
+.why-we__titel{
+  margin-top: 30px;
+  color: var(--font-primary);
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+.why-we__description {
+  margin-top: 10px;
+  color: var(--text-secondary);
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}

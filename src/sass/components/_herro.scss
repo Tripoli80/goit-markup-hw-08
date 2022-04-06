@@ -1,0 +1,49 @@
+
+/* <!-- Эффективные решения для вашего бизнеса --> */
+.herro {
+  /* margin-top: 25px; */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  padding: 200px 0;
+  text-align: center;
+  /* background-color: ; */
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/herro-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--text-secondary-liter);
+}
+.herro__title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px;
+}
+
+.herro__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  background-color: var(--theme-color);
+  width: 200px;
+  height: 50px;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.herro__buttontxt {
+  color: var(--text-secondary-liter);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-primary);
+  line-height: 1.875;
+  /* identical to box height, or 187% */
+  align-items: center;
+  text-align: center;
+}

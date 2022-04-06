@@ -1,0 +1,40 @@
+/* наша клиенты */
+
+.client {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: 50px;
+}
+.client__item {
+  width: calc(100% / 6 - 30px);
+  margin-left: 30px;
+  height: 92px;
+}
+
+.client__link {
+  width: 100%;
+  height: 100%;
+ @include centerFlex();
+  border: solid 1px;
+  border-color: var(--social-color-primary);
+  border-radius: 3px;
+  transition-property: border-color;
+  @extend %trans;
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+  }
+}
+
+.client__icon {
+  width: 106px;
+  height: 60px;
+  @extend %trans;
+  transition-property: fill;
+  fill: var(--social-color-primary);
+  .client__item:hover &,
+  .client__item:focus & {
+    fill: #2196f3;
+  }
+}

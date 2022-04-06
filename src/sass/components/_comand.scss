@@ -1,0 +1,65 @@
+.comand--section {
+  /* margin-top: 95px; */
+  background-color: #f5f4fa;
+  /* padding-bottom: 95px; */
+}
+
+.comand {
+  margin-top: 50px;
+  display: flex;
+  margin-left: -30px;
+
+  &__item {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    flex-wrap: wrap;
+    background-color: var(--text-secondary-liter);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__name {
+    color: var(--text-primary);
+    text-align: center;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__description {
+    color: var(--text-secondary);
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+  }
+
+  &__box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+
+.soclink {
+  margin-top: 16px;
+  @include centerFlex();
+  
+&__box {
+  @extend %sosial-box;
+  background-color: transparent;
+}
+
+&__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+&__icon {
+  @extend %sosial-icon;
+  fill: var(--social-color-primary);
+}
+}
+

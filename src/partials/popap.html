@@ -1,0 +1,89 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-container">
+    <p class="modal-container__title">Оставьте свои данные, мы вам перезвоним</p>
+    <form name="modal-form" class="modal-form">
+      <div class="modal-form__item">
+        <label for="modal-form__name" class="modal-form__lable">Имя</label>
+        <div class="modal-form__box">
+          <input
+            type="text"
+            name="modal-form__name"
+            class="modal-form__input modal-form__name"
+            id="modal-form__name"
+            placeholder=""
+          />
+          <svg class="modal-form__icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-modal-people"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="modal-form__item">
+        <label for="modal-form__tel" class="modal-form__lable">Телефон</label>
+        <div class="modal-form__box">
+          <input
+            type="tel"
+            name="modal-form__tel"
+            class="modal-form__input modal-form__tel"
+            id="modal-form__tel"
+            placeholder=""
+          />
+          <svg class="modal-form__icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-modal-phone"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal-form__item">
+        <label for="modal-form-mail" class="modal-form__lable">Почта</label>
+        <div class="modal-form__box">
+          <input
+            type="mail"
+            name="modal-form-mail"
+            class="modal-form__input modal-form-mail"
+            id="modal-form-mail"
+            placeholder=""
+          />
+          <svg class="modal-form__icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-modal-mail"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal-form__item">
+        <label for="modal-form__text" class="modal-form__lable">Комментарий</label>
+        <div class="modal-form__box">
+          <textarea
+            name="modal-form__text"
+            class="modal-form__input modal-form__text"
+            id="modal-form__text"
+            placeholder="Введите текст"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="modal-form__checkbox">
+        <input
+          type="checkbox"
+          class="modal-form__check"
+          id="modal-form__check"
+          name="modal-form__check"
+          placeholder=""
+        />
+        <label for="modal-form__check" class="modal-form__check-lable"
+          >Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#">
+            <span class="modal-form__legal">Условия договора</span>
+          </a></label
+        >
+      </div>
+      <button type="submit" class="modal-form__button">
+        <span class="modal-form__buttonname">Отправить</span>
+      </button>
+    </form>
+
+    <button type="button" class="modal-container__closed" data-modal-close>
+      <svg class="modal-container__icon">
+        <use href="./images/icons.svg#icon-modal-closed"></use>
+      </svg>
+    </button>
+    <!-- <button  class="closed-modal" data-modal-close >закрыть</button> -->
+  </div>
+</div>

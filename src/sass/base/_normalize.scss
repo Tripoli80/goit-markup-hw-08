@@ -1,0 +1,28 @@
+.flex-list {
+  display: flex;
+}
+
+.list {
+  list-style: none;
+}
+input[type="checkbox"],
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+ }
+.section {
+  padding: 94px 0;
+}
+.section__title{
+  text-align: center;
+}

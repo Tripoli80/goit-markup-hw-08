@@ -1,0 +1,23 @@
+.logo {
+  font-family: var(--font-logo);
+  font-size: 26px;
+  font-weight: 700;
+  color: #2196f3;
+  margin-right: 95px;
+}
+
+.logo .second {
+  color: var(--text-logo);
+}
+
+
+.footer-section .second {
+  color: var(--text-secondary-liter);
+}
+.footer-section .first {
+  color: var(--theme-color);
+}
+
+.footer-section .logo {
+  margin-right: 0;
+} 
