@@ -17,8 +17,20 @@ input[type="checkbox"],
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  padding: 0 15px;
+  @media screen and (min-width: --mobile-width) {
+    width: --mobile-width;
+    padding: 0 15px;
+    }
+    @media screen and (min-width: --table-width) {
+      width: --table-width;
+      padding: 0 15px;
+    }
+    @media screen and (min-width: --laptop-width) {
+      width: --mobile-width;
+      padding: 0 15px;
+    }
+  
+  
  }
 .section {
   padding: 94px 0;
