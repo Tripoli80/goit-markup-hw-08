@@ -69,8 +69,8 @@
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;/* justify-content: center; */
+  // justify-content: center;
+  // align-items: center;/* justify-content: center; */
   @media screen and (min-width: $tablet-width) {
     margin-left: -30px;
   
@@ -84,6 +84,8 @@
   box-sizing: border-box;
   width: calc((100% - 2 * 15px)/1);
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
  
   @media screen and (min-width: $tablet-width) {
   width: calc((100% - 4 * 15px)/2);
@@ -102,7 +104,8 @@
 }
 
 .portfolio-list__link {
-  display: block;
+  display: flex;flex-direction: column;
+height: 100%;
   position: relative;
  
   &:hover,
@@ -117,6 +120,7 @@
 .portfolio-list__img {
   position: relative;
   overflow: hidden;
+  
 }
 
 .portfolio-list__overlay {
@@ -147,6 +151,7 @@
 }
 
 .portfolio-list__boxtxt {
+  flex-grow: 1;
   border-bottom: solid 1px #eeeeee;
   border-left: solid 1px #eeeeee;
   border-right: solid 1px #eeeeee;
