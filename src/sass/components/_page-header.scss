@@ -1,8 +1,15 @@
 .header {
+  box-sizing: border-box;
+  height: 80px;
+  padding-bottom: -1px;
   border-bottom: 1px solid #ececec;
+  
   &__container {
+    width: 100%;
+   
     display: flex;
     align-items: center;
+
   }
   
   &__nav {
@@ -17,15 +24,64 @@
     font-weight: 500;
     color: var(--text-primary);
   }
-}
+  &__tablet{
+    padding: 0 0px;
+    @media (min-width:$laptop-width) {
+      padding: 0 215px;
+    }
+    @media   (max-width: $tablet-width-1) {
+      display: none;      
+    }
+  }
+
+         
+
+  &__mobile{
+    padding: 0 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @media (min-width:$tablet-width) {
+      display: none;  
+    }
+  }
+
+  &__burger{
+   
+display: flex;
+align-items: center;
+      margin-left: auto;
+      cursor: pointer;
+       
+      width: 40px;
+      height: 40px;
+   
+      background-color: transparent;
+      &:hover .header__burgericon,
+      &:focus .header__burgericon{
+        fill: var(--theme-color);
+      }
+  }
+    &__burgericon {
+      width: 24px;
+      height: 16px;
+    
+      fill: var(--text-logo);
+      transition-property: fill;
+      transition-duration: var(--time);
+      transition-timing-function: var(--functional-cubic);
+    }
+  }
+
 
 .header
-
 .header__item + .header__item {
   margin-left: 50px;
 }
 .link {
-  padding: 30px 0;
+  padding: 32px 0;
   display: block;
   font-family: var(--font-primary);
   font-style: normal;
@@ -53,7 +109,7 @@
     background-color: var(--theme-color);
     border-radius: 2px;
     position: absolute;
-    bottom: -1px;
+    bottom:0px;
   }
 }
 
@@ -80,17 +136,37 @@
 
 .heder-contact-list {
   margin-left: auto;
-  display: flex;
+ display: block;
+ text-align: left;
+
+    @media (min-width: $laptop-width) {
+      display: flex;
+    }
+  
+  
+  
 }
 
 .heder-contact-item {
   &:hover {
     fill: var(--theme-color);
   }
-  &:not(:first-child) {
-    margin-left: 50px;
-    flex-wrap: wrap;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+    
   }
+  @media (min-width: $laptop-width) {
+    display: flex;
+    &:not(:first-child) {
+      margin-left: 50px;
+      flex-wrap: wrap;
+    }
+    &:not(:last-child) {
+      margin-bottom: 0;
+    
+    }
+  }
+ 
 }
 
 .heder-contact-icon-mail {

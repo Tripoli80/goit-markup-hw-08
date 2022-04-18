@@ -1,15 +1,39 @@
 /*  ПОЧЕМУ МЫ */
 .why-we {
   display: flex;
-  margin-left: -30px;
-}
-.why-we__item {
-  width: calc(100% / 4 - 30px);
-  margin-left: 30px;
   flex-wrap: wrap;
+  text-align: center;
+  // margin-left: -30px;
+  // outline: 2px solid yellow;
+  width: 100%;
+  
+}
+
+.why-we__item {
+  //  margin-left: 30px;
+  //  outline: 1px solid red;
+  
+  @media (min-width: $mobile-width) {
+    width:calc((100% -1*15px) /1);
+    margin: 0 15px ;
+    
+  }
+  @media (min-width: $tablet-width) {
+    width: calc((100% - 4 * 15px) /2);
+    margin: 0 15px; 
+  }
+  @media (min-width: $laptop-width) {
+    width: calc((100% - 8 * 15px) /4);
+    margin: 0 15px;
+  }
+
+
+  
+ 
   /* width: 100px; */
 }
 .why-we__box {
+  // outline: 1px solid black;
   background-color: #f5f4fa;
   display: flex;
   border-radius: 4px;
@@ -29,6 +53,7 @@
   font-size: 14px;
 }
 .why-we__description {
+  text-align: left;
   margin-top: 10px;
   color: var(--text-secondary);
   line-height: 1.71em;

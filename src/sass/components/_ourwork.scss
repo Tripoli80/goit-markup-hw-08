@@ -1,8 +1,12 @@
 /* наша работа */
 .work-section {
   padding-top: 0;
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 .work{
+  
   display: flex;
   margin-left: -30px;
   margin-top: 50px;

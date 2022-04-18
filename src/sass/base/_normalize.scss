@@ -17,24 +17,41 @@ input[type="checkbox"],
 .container {
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: --mobile-width) {
-    width: --mobile-width;
-    padding: 0 15px;
+  width: 100%;
+ 
+  // @media (min-width: $mobile-width) {
+ 
+  //   width: $mobile-width;
+    
+  // }
+  @media (min-width: $tablet-width) {
+     
+      width: $tablet-width;
+    
     }
-    @media screen and (min-width: --table-width) {
-      width: --table-width;
-      padding: 0 15px;
-    }
-    @media screen and (min-width: --laptop-width) {
-      width: --mobile-width;
-      padding: 0 15px;
-    }
+  @media (min-width: $laptop-width) {
   
+    width: $laptop-width;
+  
+  }
+
   
  }
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+  @media (min-width: $tablet-width ) {
+    padding: 94px 0;
+  }
+  @media (min-width: $laptop-width) {
+    padding: 94px 0;
+  }
+  
+  
 }
 .section__title{
   text-align: center;
+}
+
+.display-none{
+  display: none;
 }
