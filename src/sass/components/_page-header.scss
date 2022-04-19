@@ -1,6 +1,9 @@
 .header {
+  display: flex;
+  flex-wrap: nowrap;
   box-sizing: border-box;
   height: 80px;
+  align-items: center;
   padding-bottom: -1px;
   border-bottom: 1px solid #ececec;
   
@@ -48,10 +51,11 @@
     }
   }
 
-  &__burger{
-   
-display: flex;
-align-items: center;
+  &-btn{
+    position: relative;
+    z-index: 99;
+      display: flex;
+      align-items: center;
       margin-left: auto;
       cursor: pointer;
        
@@ -59,21 +63,51 @@ align-items: center;
       height: 40px;
    
       background-color: transparent;
-      &:hover .header__burgericon,
-      &:focus .header__burgericon{
-        fill: var(--theme-color);
-      }
-  }
-    &__burgericon {
-      width: 24px;
-      height: 16px;
-    
-      fill: var(--text-logo);
-      transition-property: fill;
-      transition-duration: var(--time);
-      transition-timing-function: var(--functional-cubic);
+
+   
+  
+   
+      &__icon,
+      &__icon{
+        position: absolute;
+        width: 24px;
+        height: 16px;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      
+        fill: var(--text-logo);
+        transition-property: fill;
+        transition-duration: var(--time);
+        transition-timing-function: var(--functional-cubic);
     }
+        &:hover &__icon,
+        &:focus &__icon {
+          fill: var(--theme-color);
+        }
+        &__icon-open {
+          opacity: 1;
+          
+        }
+        
+        &__icon-close {
+          opacity: 0;
+       
+         
+        }
   }
+      
+   
+
+
+  }
+
+  .header-btn.is-active .header-btn__icon-open{
+      opacity: 0;
+  }
+    .header-btn.is-active .header-btn__icon-close {
+      opacity: 1;
+    }
 
 
 .header
