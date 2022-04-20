@@ -30,7 +30,7 @@
   &__tablet{
     padding: 0 0px;
     @media (min-width:$laptop-width) {
-      padding: 0 215px;
+      // padding: 0 215px;
     }
     @media   (max-width: $tablet-width-1) {
       display: none;      

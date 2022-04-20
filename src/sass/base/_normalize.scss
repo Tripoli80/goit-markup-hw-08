@@ -18,6 +18,8 @@ input[type="checkbox"],
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  padding: 0 15px;
+  min-width: 320px;
  
   // @media (min-width: $mobile-width) {
  
@@ -39,12 +41,12 @@ input[type="checkbox"],
  }
 .section {
   padding: 60px 0;
-  @media (min-width: $tablet-width ) {
-    padding: 94px 0;
-  }
-  @media (min-width: $laptop-width) {
-    padding: 94px 0;
-  }
+  // @media (min-width: $tablet-width ) {
+  //   padding: 94px 0;
+  // }
+  // @media (min-width: $laptop-width) {
+  //   padding: 94px 0;
+  // }
   
   
 }

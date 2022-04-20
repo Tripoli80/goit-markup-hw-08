@@ -1,30 +1,47 @@
 /*  ПОЧЕМУ МЫ */
-.why-we {
+.why-we{
+  display: flex;
+ justify-content: center;
+}
+.why-we__list {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  
   // margin-left: -30px;
   // outline: 2px solid yellow;
   width: 100%;
+
+   @media screen and (min-width: $tablet-width) {
+    margin-left: -30px;
+    margin-bottom: -30px;
   
+  }
 }
 
 .why-we__item {
-  //  margin-left: 30px;
-  //  outline: 1px solid red;
   
-  @media (min-width: $mobile-width) {
-    width:calc((100% -1*15px) /1);
-    margin: 0 15px ;
-    
+  //  outline: 1px solid red;
+  // width:calc((100% - 1 * 15px) / 1);
+  width: 100%;
+  min-width: 320px;
+  &:not(:last-child){
+    margin-bottom: 30px;
   }
+
   @media (min-width: $tablet-width) {
-    width: calc((100% - 4 * 15px) /2);
-    margin: 0 15px; 
+    width: calc((100% - 4 * 15px) / 2);
+    // margin: 0 15px; 
+    margin-left: 30px;
+    margin-bottom: 30px;
+    min-width: none;
   }
   @media (min-width: $laptop-width) {
-    width: calc((100% - 8 * 15px) /4);
-    margin: 0 15px;
+    width: calc((100% - 8 * 15px) / 4);
+    // margin: 0 15px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    min-width: 0;
   }
 
 

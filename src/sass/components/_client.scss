@@ -1,10 +1,19 @@
 /* наша клиенты */
+.client
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
 
-.client {
+.client__list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-top: 50px;
+  margin-right: -30px;
+  margin-bottom: -30px;
+  margin-top: 30px;
   width: 100%;
   
  
@@ -13,19 +22,30 @@
   position: relative;
   
   width: calc((100% - 4 * 15px) /2);
-  margin: 0 15px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  
 &:not(:last-child){
   margin-bottom: 30px;
+  
+  
 }
- 
   @media (min-width: $tablet-width) {
     width: calc((100% - 6 * 15px) /3);
-    margin: 0 15px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      margin-right: 30px;
+    }
+   
   }
   
   @media (min-width: $laptop-width) {
-    width: calc((100% - 8 * 15px) /6);
-    margin: 0 15px;
+    width: calc((100% - 12 * 15px) /6);
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      margin-right: 30px;
+    }
+    
   }
   // width: calc(100% / 6 - 30px);
   // margin-left: 30px;
