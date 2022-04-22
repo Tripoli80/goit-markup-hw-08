@@ -1,37 +1,35 @@
 /*  ПОЧЕМУ МЫ */
-.why-we{
+.why-we {
   display: flex;
- justify-content: center;
+  justify-content: center;
 }
 .why-we__list {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  
+
   // margin-left: -30px;
   // outline: 2px solid yellow;
   width: 100%;
 
-   @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin-left: -30px;
     margin-bottom: -30px;
-  
   }
 }
 
 .why-we__item {
-  
   //  outline: 1px solid red;
   // width:calc((100% - 1 * 15px) / 1);
   width: 100%;
   min-width: 320px;
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 30px;
   }
 
   @media (min-width: $tablet-width) {
     width: calc((100% - 4 * 15px) / 2);
-    // margin: 0 15px; 
+    // margin: 0 15px;
     margin-left: 30px;
     margin-bottom: 30px;
     min-width: none;
@@ -44,9 +42,6 @@
     min-width: 0;
   }
 
-
-  
- 
   /* width: 100px; */
 }
 .why-we__box {
@@ -62,7 +57,7 @@
   width: 70px;
   height: 70px;
 }
-.why-we__titel{
+.why-we__titel {
   margin-top: 30px;
   color: var(--font-primary);
   line-height: 1.14em;
