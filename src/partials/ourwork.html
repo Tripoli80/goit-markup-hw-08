@@ -5,24 +5,50 @@
     <ul class="work">
       <li class="work__item">
         <!--  -->
-        <img
-          srcset="images/work/work_1.jpg 300w, images/work/work_1.jpg 600w, images/work/work_1.jpg 1200w"
-          sizes="(min-width: 900px) 600px, (min-width: 600px) 300px, 100vw"
-          src="images/work/work_1.jpg"
-          alt="Описание изображения для всех версий"
-        />
-        <!-- <img src="images/work/work_1.jpg" alt="ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ" /> -->
-        <!-- <img src="./images/sec3_img1.jpg" alt="ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ" /> -->
+        <picture>
+          <source
+            srcset="./images/work/work_1.webp 1x, ./images/work/work_1@2x.webp 2x"
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/work/work_1.jpg 1x, ./images/work/work_1@2x.jpg 2x"
+            media="(min-width: 1200px)"
+            type="image/jpeg"
+          />
+          <!-- <source
+            srcset="./images/gallery/pic-1_md.webp 1x, ./images/gallery/pic-1_md@2x.webp 2x"
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/gallery/pic-1_md.jpg 1x, ./images/gallery/pic-1_md@2x.jpg 2x"
+            media="(min-width: 768px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="./images/gallery/pic-1_sm.webp 1x, ./images/gallery/pic-1_sm@2x.webp 2x"
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/gallery/pic-1_sm@2x.jpg 2x"
+            media="(max-width: 767px)"
+            type="image/jpeg"
+          /> -->
+          <img src="./images/work/work_1.jpg" alt="ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ" />
+          <!-- <img src="./images/sec3_img1.jpg" alt="ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ" /> -->
+        </picture>
 
         <!--  -->
         <p class="work__titel">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
       </li>
       <li class="work__item">
-        <img src="images/sec3_img2.jpg" alt="Мобильные приложения" />
+        <img src="./images/sec3_img2.jpg" alt="Мобильные приложения" />
         <p class="work__titel">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
       </li>
       <li class="work__item">
-        <img src="images/sec3_img3.jpg" alt="ДИЗАЙНЕРСКИЕ РЕШЕНИЯ" />
+        <img src="./images/sec3_img3.jpg" alt="ДИЗАЙНЕРСКИЕ РЕШЕНИЯ" />
         <p class="work__titel">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
       </li>
     </ul>
