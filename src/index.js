@@ -1,7 +1,11 @@
 import './sass/main.scss';
-import '../js/modal';
 import './menu';
+<<<<<<< HEAD
 // import '../js/pic';
+=======
+import '../js/modal';
+
+>>>>>>> main
 
 
 
