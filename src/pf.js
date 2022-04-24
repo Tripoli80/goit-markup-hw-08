@@ -1,2 +1,2 @@
 import './sass/pf.scss';
-import './menu';
+import '../js/menu';

@@ -3,48 +3,45 @@
   background-color: #f5f4fa;
   /* padding-bottom: 95px; */
 }
-.comand{
+
+.comand--section .section__title {
+  margin-bottom: 30px;
+}
+.comand {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .comand {
-  &__list{
-  margin-top: 30px;
-  margin-bottom: -30px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-}
+  &__list {
+    margin-top: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    justify-content: center;
+  }
   &__item {
     margin-left: 30px;
     flex-wrap: wrap;
     background-color: var(--text-secondary-liter);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    &:not(:last-child){
-      margin-bottom: 30px;
-    }
-   
-      width: calc((100% -1 * 15px) /1);
-      
-    
 
-    
+    margin-top: 30px;
+
+    // width: calc((100% -1 * 15px) / 1);
+
     @media (min-width: $tablet-width) {
-      width: calc((100% - 4 * 15px) /2);
-      margin-bottom: 30px;
+      width: calc((100% - 4 * 15px) / 2);
+      margin-top: 30px;
     }
-    
+
     @media (min-width: $laptop-width) {
-      width: calc((100% - 8 * 15px) /4);
-      margin-bottom: 30px;
-     
+      width: calc((100% - 8 * 15px) / 4);
+      margin-top: 30px;
     }
-   
   }
 
   &__name {
@@ -67,27 +64,34 @@
 
   &__box {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+    @media (min-width: $tablet-width) {
+      padding-top: 30px;
+      padding-bottom: 23px;
+    }
+
+    @media (min-width: $laptop-width) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
 }
-
 
 .soclink {
   margin-top: 16px;
   @include centerFlex();
-  
-&__box {
-  @extend %sosial-box;
-  background-color: transparent;
-}
 
-&__item:not(:last-child) {
-  margin-right: 10px;
-}
+  &__box {
+    @extend %sosial-box;
+    background-color: transparent;
+  }
 
-&__icon {
-  @extend %sosial-icon;
-  fill: var(--social-color-primary);
-}
-}
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
 
+  &__icon {
+    @extend %sosial-icon;
+    fill: var(--social-color-primary);
+  }
+}
