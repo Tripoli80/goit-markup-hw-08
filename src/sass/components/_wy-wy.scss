@@ -7,38 +7,39 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
 
   // margin-left: -30px;
   // outline: 2px solid yellow;
-  width: 100%;
+  // width: 100%;
 
   @media screen and (min-width: $tablet-width) {
     margin-left: -30px;
-    margin-bottom: -30px;
+    margin-top: -30px;
   }
 }
 
 .why-we__item {
   //  outline: 1px solid red;
-  // width:calc((100% - 1 * 15px) / 1);
-  width: 100%;
-  min-width: 320px;
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  min-width:calc((100% - 2 * 15px) / 1);
+  // width: 100%;
+  // min-width: 320px;
+  &:not(:first-child) {
+    margin-top: 30px;
   }
 
   @media (min-width: $tablet-width) {
     width: calc((100% - 4 * 15px) / 2);
     // margin: 0 15px;
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     min-width: none;
   }
   @media (min-width: $laptop-width) {
     width: calc((100% - 8 * 15px) / 4);
     // margin: 0 15px;
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     min-width: 0;
   }
 

@@ -1,6 +1,7 @@
 /* подвал */
 
 .footer-section {
+  min-width: 320px;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -11,62 +12,47 @@
 .footer {
   text-align: center;
   align-items: baseline;
-  
 
-    @media screen and (min-width: $tablet-width) {
-      display: flex;
-      flex-wrap: wrap;
-      
-    }
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   @media screen and (min-width: $laptop-width) {
     text-align: left;
     flex-wrap: nowrap;
-    
-   
   }
-
-  
 }
 .footer__item {
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
 
-  
-    &:not(:last-child) {
-      margin-bottom: 60px;
-     
-    }
-
-    &:last-child {
-      @media screen and (max-width: $tablet-width-1) {
-        width: 100%;
+  &:last-child {
+    @media screen and (max-width: $tablet-width-1) {
+      width: 100%;
       margin-left: auto;
       margin-right: auto;
-      }
-      
     }
+  }
 
-      @media screen and (max-width: $laptop-width-1){
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-
-      }
+  @media screen and (max-width: $laptop-width-1) {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @media screen and (min-width: $laptop-width) {
-      &:not(:last-child) {
-        margin-bottom: 0;
-      
-      }
-    &:first-child {
-    
-      margin-right: 70px;
-      
+    &:not(:last-child) {
+      margin-bottom: 0;
     }
-    
+    &:first-child {
+      margin-right: 70px;
+    }
+
     &:last-child {
       margin-left: auto;
     }
   }
-
 }
 
 .footer-contact {
@@ -89,7 +75,6 @@
 
   &__item:not(:last-child) {
     margin-bottom: 9px;
-    
   }
 }
 
@@ -114,46 +99,41 @@
 
 /* on;line-mail */
 .online {
-    @media screen and (min-width: $laptop-width) {
-      display: flex;
-      margin-top: 20px;
-    }
-
- 
+  @media screen and (min-width: $laptop-width) {
+    display: flex;
+    margin-top: 20px;
+  }
 }
-.footer-contact__titel{
+.footer-contact__titel {
   margin-bottom: 20px;
   @media screen and (min-width: $laptop-width) {
     margin-bottom: 0;
   }
 }
 
-
 .online-form:not(:last-child) {
   margin-bottom: 20px;
 }
 .online-form {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
 
-align-items: center;
-justify-content: center;
-&:not(:last-child){
-  margin-bottom: 20px;
-}
-
-  @media screen and (min-width: $laptop-width) {
-flex-direction:row;
-    flex-wrap: nowrap;
-   
-      margin-bottom:0;
-    
+  align-items: center;
+  justify-content: center;
+  &:not(:last-child) {
+    margin-bottom: 20px;
   }
 
+  @media screen and (min-width: $laptop-width) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    margin-bottom: 0;
+  }
 }
 .online-form__input {
   padding-left: 16px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -166,9 +146,8 @@ flex-direction:row;
   color: var(--bcg-main);
   margin-bottom: 20px;
   @media screen and (min-width: $laptop-width) {
-  
     margin-bottom: 0;
-  
+     width: 358px;
   }
 
   &::placeholder {
@@ -189,8 +168,6 @@ flex-direction:row;
   }
 }
 .online-form__button {
-
-
   @include centerFlex();
   width: 200px;
   height: 50px;
