@@ -20,10 +20,6 @@
 }
 
 .why-we__item {
-  //  outline: 1px solid red;
-  min-width:calc((100% - 2 * 15px) / 1);
-  // width: 100%;
-  // min-width: 320px;
   &:not(:first-child) {
     margin-top: 30px;
   }
@@ -33,14 +29,12 @@
     // margin: 0 15px;
     margin-left: 30px;
     margin-top: 30px;
-    min-width: none;
   }
   @media (min-width: $laptop-width) {
     width: calc((100% - 8 * 15px) / 4);
     // margin: 0 15px;
     margin-left: 30px;
     margin-top: 30px;
-    min-width: 0;
   }
 
   /* width: 100px; */
